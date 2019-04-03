@@ -23,7 +23,7 @@ public class  VoiceInMessage  extends InMessage{
 
 	@XmlElement(name = "Format")
 	@JsonProperty("Format")
-	private String url;
+	private String format;
 
 	@XmlElement(name = "MediaId")
 	@JsonProperty("MediaId")
@@ -33,12 +33,12 @@ public class  VoiceInMessage  extends InMessage{
 		super.setMsgType("voice");
 	}
 
-	public String getUrl() {
-		return url;
+	public String getFormat() {
+		return format;
 	}
 
-	public void setUrl(String url) {
-		this.url = url;
+	public void setFormat(String format) {
+		this.format = format;
 	}
 
 	public String getMedioId() {
@@ -55,7 +55,7 @@ public class  VoiceInMessage  extends InMessage{
 
 	@Override
 	public String toString() {
-		return "VoiceInMessage [url=" + url + ", medioId=" + medioId + ", getToUserName()=" + getToUserName()
+		return "VoiceInMessage [format=" + format + ", medioId=" + medioId + ", getToUserName()=" + getToUserName()
 				+ ", getFromUserName()=" + getFromUserName() + ", getCreateTime()=" + getCreateTime()
 				+ ", getMsgType()=" + getMsgType() + ", getMsgId()=" + getMsgId() + "]";
 	}
