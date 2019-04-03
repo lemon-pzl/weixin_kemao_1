@@ -21,7 +21,7 @@ public class MessageTypeMapper {
 		typeMap.put("text", TextInMessage.class);
 		typeMap.put("image", ImageInMessage.class);
 
-		typeMap.put("vioce", VoiceInMessage.class);
+		typeMap.put("voice", VoiceInMessage.class);
 		typeMap.put("video", VideoInMessage.class);
 		typeMap.put("location", LocationInMessage.class);
 		typeMap.put("shortvideo", ShortvideoInMessage.class);
