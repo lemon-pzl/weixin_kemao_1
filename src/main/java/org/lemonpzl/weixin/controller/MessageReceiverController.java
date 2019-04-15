@@ -64,12 +64,6 @@ public class MessageReceiverController {
 		LOG.debug("收到用户发送给公众号的信息: \n-----------------------------------------\n"
 				+ "{}\n-----------------------------------------\n", xml);
 
-//		if (xml.contains("<MsgType><![CDATA[text]]></MsgType>")) {
-//		} else if (xml.contains("<MsgType><![CDATA[image]]></MsgType>")) {
-//		} else if (xml.contains("<MsgType><![CDATA[voice]]></MsgType>")) {
-//		} else if (xml.contains("<MsgType><![CDATA[video]]></MsgType>")) {
-//		} else if (xml.contains("<MsgType><![CDATA[location]]></MsgType>")) {
-//		}
 
 		// 截取消息类型
 		// <MsgType><![CDATA[text]]></MsgType>
