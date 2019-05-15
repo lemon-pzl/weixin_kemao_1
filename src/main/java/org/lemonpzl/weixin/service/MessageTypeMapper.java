@@ -4,6 +4,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import org.lemonpzl.weixin.domain.InMessage;
+import org.lemonpzl.weixin.domain.event.EventInMessage;
 import org.lemonpzl.weixin.domain.image.ImageInMessage;
 import org.lemonpzl.weixin.domain.link.LinkInMessage;
 import org.lemonpzl.weixin.domain.location.LocationInMessage;
@@ -26,6 +27,8 @@ public class MessageTypeMapper {
 		typeMap.put("location", LocationInMessage.class);
 		typeMap.put("shortvideo", ShortvideoInMessage.class);
 		typeMap.put("link", LinkInMessage.class);
+		
+		typeMap.put("event", EventInMessage.class);
 
 		// typeMap.put("event", EventInMessage.class);
 	}
